@@ -15,36 +15,29 @@
  */
 package com.example.androiddevchallenge
 
-import android.os.Bundle
-import androidx.activity.compose.setContent
-import androidx.appcompat.app.AppCompatActivity
+import androidx.compose.material.*
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.androiddevchallenge.ui.theme.MyTheme
+import androidx.navigation.NavController
+import androidx.navigation.compose.navigate
 
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContent {
-            MyTheme {
-                MyApp()
-            }
+@Composable
+fun HomePage(navController: NavController, dogs: List<Dog>) {
+
+    val snackHostState = SnackbarHostState()
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = {
+                    Text("【琨】的狗狗领养站🐶")
+                }
+            )
+        },
+        snackbarHost = {
+            SnackbarHost(snackHostState)
         }
-    }
-}
-
-@Preview("Light Theme", widthDp = 360, heightDp = 640)
-@Composable
-fun LightPreview() {
-    MyTheme {
-        MyApp()
-    }
-}
-
-@Preview("Dark Theme", widthDp = 360, heightDp = 640)
-@Composable
-fun DarkPreview() {
-    MyTheme(darkTheme = true) {
-        MyApp()
+    ) {
+        DogList(dogs) { index ->
+            navController.navigate("detail/$index")
+        }
     }
 }
