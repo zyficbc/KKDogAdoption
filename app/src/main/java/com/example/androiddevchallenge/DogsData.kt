@@ -31,7 +31,7 @@ class DogsData {
         ),
         Dog(
             "豆豆", "泰迪", "石家庄",
-            "3岁半", "Male", "Small", "棕色泰迪，体型较大，18斤重，已绝育，身体健康",R.drawable.doudou
+            "3岁半", "Male", "Small", "棕色泰迪，体型较大，18斤重，已绝育，身体健康", R.drawable.doudou
         ),
         Dog(
             "馒头", "柴犬", "天津",
@@ -43,22 +43,23 @@ class DogsData {
         ),
         Dog(
             "妞妞", "柯基", "南昌",
-            "6岁", "Male", "Medium", "性格活泼，亲人，已绝育",R.drawable.niuniu
+            "6岁", "Male", "Medium", "性格活泼，亲人，已绝育", R.drawable.niuniu
         ),
         Dog(
             "崽崽", "金毛", "上海",
-            "7岁", "Female", "Large", "身体健康，已做体内外驱虫，能听懂简单指令",R.drawable.zaizai
+            "7岁", "Female", "Large", "身体健康，已做体内外驱虫，能听懂简单指令", R.drawable.zaizai
         ),
         Dog(
             "盒盒", "贵宾", "大连",
-            "1岁", "Male", "Large", "咖啡色毛发，中等体型，乖巧胆小，亲人可爱",R.drawable.hehe
+            "1岁", "Male", "Large", "咖啡色毛发，中等体型，乖巧胆小，亲人可爱", R.drawable.hehe
         ),
         Dog(
             "兔兔", "中华田园犬", "成都",
-            "2岁", "Female", "Large", "聪明独立，性格温和爱撒娇，不乱叫，已驱虫免疫，已做绝育",R.drawable.tutu
+            "2岁", "Female", "Large", "聪明独立，性格温和爱撒娇，不乱叫，已驱虫免疫，已做绝育", R.drawable.tutu
         ),
         Dog(
             "幺鸡", "串串", "北京",
-            "4个月", "Female", "Medium","已体内外驱虫，未绝育。性格活泼、可爱、聪明，爱玩各种玩具，亲人懂事，超级萌萌哒，会坐会握手",R.drawable.yaoji
-        ),)
+            "4个月", "Female", "Medium", "已体内外驱虫，未绝育。性格活泼、可爱、聪明，爱玩各种玩具，亲人懂事，超级萌萌哒，会坐会握手", R.drawable.yaoji
+        ),
+    )
 }

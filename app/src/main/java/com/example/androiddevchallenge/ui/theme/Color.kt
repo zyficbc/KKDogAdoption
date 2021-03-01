@@ -22,7 +22,6 @@ val purple500 = Color(0xFF6200EE)
 val purple700 = Color(0xFF3700B3)
 val teal200 = Color(0xFF03DAC5)
 
-
 val royalBlue = Color(0xFF4169E1)
 val lightSkyBlue = Color(0xFF1E90FF)
 val gold = Color(0xFFF5F5F5)

@@ -18,9 +18,15 @@ package com.example.androiddevchallenge
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Card
@@ -52,16 +58,16 @@ fun DogList(dogs: List<Dog>, onItemClick: (Int) -> Unit) {
             )
         }
     }
-
-
 }
 
 @Composable
 fun DogItem(dog: Dog, modifier: Modifier = Modifier) {
     Card(modifier) {
-        Row(modifier = Modifier
-            .height(120.dp)
-            .padding(8.dp)) {
+        Row(
+            modifier = Modifier
+                .height(120.dp)
+                .padding(8.dp)
+        ) {
             Image(
                 painterResource(dog.picture),
                 "Picture of dog: ${dog.name}",
@@ -73,11 +79,12 @@ fun DogItem(dog: Dog, modifier: Modifier = Modifier) {
             Column(
                 Modifier
                     .padding(8.dp)
-                    .padding(8.dp,0.dp,0.dp,0.dp)
-                    .weight(1f)) {
+                    .padding(8.dp, 0.dp, 0.dp, 0.dp)
+                    .weight(1f)
+            ) {
                 Text(dog.name, style = MaterialTheme.typography.h5)
-                Text(dog.breed, style= MaterialTheme.typography.body2)
-                Text(dog.location, style= MaterialTheme.typography.body2)
+                Text(dog.breed, style = MaterialTheme.typography.body2)
+                Text(dog.location, style = MaterialTheme.typography.body2)
             }
             Image(
                 painterResource(if (dog.gender == "Male") R.drawable.male else R.drawable.female),
@@ -87,7 +94,6 @@ fun DogItem(dog: Dog, modifier: Modifier = Modifier) {
                     .padding(0.dp, 16.dp, 16.dp, 0.dp),
             )
         }
-
     }
 }
 
