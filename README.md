@@ -8,6 +8,7 @@
 ## :scroll: Description
 <!--- Describe your app in one or two sentences -->
 A dog adoption App just for fun and Jetpack Compose learning.
+Hello  #AndroidDevChallenge!
 
 ## :bulb: Motivation and Context
 <!--- Optionally point readers to interesting parts of your submission. -->
